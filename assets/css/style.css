@@ -69,3 +69,17 @@ td {
     padding: 5px;
     font-weight: bold;
 }
+.img-btn{
+    display: flex;
+    flex-direction: column;
+}
+#penny-img{
+    height: 400px;
+    width: 400px;
+    align-self: center;
+}
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 33%;
+}
