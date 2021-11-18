@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 total ++;
                 if(total === 0){
                     percentTails = 0;
+                    percentHeads = 0;
                 } else {
                     percentTails = Math.round((tailsTotal/total)*100);
                     percentHeads = Math.round((headsTotal/total)*100);
@@ -43,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('heads').innerHTML = `${headsTotal}`;
                 total ++;
                 if(total === 0){
+                    percentTails = 0;
                     percentHeads = 0;
                 } else{
                     percentTails = Math.round((tailsTotal/total)*100);
