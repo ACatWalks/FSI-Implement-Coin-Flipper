@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     percentTails = Math.round((tailsTotal/total)*100);
                     percentHeads = Math.round((headsTotal/total)*100);
                 }
-                document.getElementById('tails-percent').innerHTML = `${percentTails}`;
-                document.getElementById('heads-percent').innerHTML = `${percentHeads}`;
+                document.getElementById('tails-percent').innerHTML = `${percentTails}%`;
+                document.getElementById('heads-percent').innerHTML = `${percentHeads}%`;
             } else{
                 document.getElementById('penny-img').setAttribute('src', './assets/images/penny-heads.jpg')
                 document.getElementById('status-text').textContent = 'You Rolled Heads!';
@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     percentTails = Math.round((tailsTotal/total)*100);
                     percentHeads = Math.round((headsTotal/total)*100);
                 }
-                document.getElementById('tails-percent').innerHTML = `${percentTails}`;
-                document.getElementById('heads-percent').innerHTML = `${percentHeads}`;
+                document.getElementById('tails-percent').innerHTML = `${percentTails}%`;
+                document.getElementById('heads-percent').innerHTML = `${percentHeads}%`;
             }
      
          });
@@ -72,9 +72,10 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('tails').innerHTML = `${tailsTotal}`;
         total = 0;
         percentHeads = 0;
-        document.getElementById('heads-percent').innerHTML = `${percentHeads}`;
+        document.getElementById('heads-percent').innerHTML = `${percentHeads}%`;
         percentTails = 0;
-        document.getElementById('tails-percent').innerHTML = `${percentTails}`;
+        document.getElementById('tails-percent').innerHTML = `${percentTails}%`;
+        document.getElementById('status-text').textContent = `Let's Get Rolling!`;
     })
         
 
